@@ -1,0 +1,483 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    
+}
+.cls{
+    clear: both;
+}
+nav{
+    background-color: teal;
+    height: 50px;
+    position: fixed;
+    width: 100%;    
+} 
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+.logo{
+    width: 30%;
+    float: left;
+    height: 50px;
+    line-height: 50px;
+}
+
+.menu{
+    width: 70%;
+    float: left;
+}
+.menu ul{
+    float: right;
+}
+.menu ul li{
+    float: left;
+    padding: 0px 30px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+.menu ul li:hover{
+    background-color: chocolate;
+}
+.menu ul li a{
+    float: left;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 18px;
+    display: block;
+}
+.menu ul li.active,
+.menu ul li:hover{
+    background-color: blueviolet;
+}
+
+/*banner part css start*/
+#banner{
+    background:url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+/*    height: 600px; */
+}
+.banner_overlay{
+ padding: 240px 0;
+    background-color: rgba(0, 0, 0, 0.72);
+}
+.banner_con h1{
+    font-size: 50px;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+.banner_con h4{
+    font-size: 30px;
+    color: #dbdb0d;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+.banner_con a{
+    padding: 10px 20px;
+    background-color: #537272;
+    border-radius: 20px;
+    font-size: 20px;
+    color: #fff;
+    
+}
+/*banner part css end*/
+/*about part css start*/
+#about{
+    padding: 40px 0;
+}
+.about_head h3{
+    text-align: center; 
+    font-size: 30px;
+    background-color: teal;
+    color: #fff;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    border-radius: 5px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+      
+}
+.about_img{
+    width: 48%;
+    float: left;
+    padding-right: 10px;
+}
+.about_con{
+   width: 50%;
+    float: left; 
+}
+.about_img img{
+    width: 100%
+}
+.about_con h4{
+    font-size: 25px; 
+    padding-bottom: 20px;
+    
+}
+.about_con p{
+    font-size: 18ppx;
+    line-height: 20px;
+    padding-left: 10px; 
+    text-align: justify;
+}
+
+/*about part css end*/
+/*gallery part css start*/
+.gly_img{
+    width:32%;
+    float: left;
+    position: relative;
+    margin-bottom: 30px;
+    margin-right: 13px;
+  
+}
+.gly_middle{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.gly_img img{
+    width: 100%;
+    height: 100%;
+}
+.gly_head h3{
+    color: black;
+    background-color: #ea9a22;
+}
+.gly_overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color:rgba(0, 0, 0, 0.67);
+    height: 100%;
+    width:  100%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    transform:scale(0);
+    transition: all linear .3s;
+    
+}
+.gly_overlay a{
+     height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+    background-color: blue;
+    color: #fff;
+    border-radius: 50%;
+}
+.gly_img:hover .gly_overlay{
+transform: scale(1)
+}
+/*gallery part css end*/
+/*icon part css start*/
+ul li{
+    list-style: none;
+}
+.icon{
+/*    text-align: center;*/
+}
+.icon ul {
+    float: right;
+}
+.icon ul li{
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    float: left;
+    background-color: chartreuse;
+    border-radius: 50%;
+
+}
+.icon ul li:hover{
+    background-color: blue;
+}
+.icon ul li:first-child{
+    background-color: blue;
+}
+
+.icon ul li:nth-child(2){
+    background-color: red;
+}
+.icon ul li:nth-child(3){
+    background-color: skyblue;
+}
+.icon ul li:nth-child(4){
+    background-color: tomato;
+}
+.icon ul li:nth-child(5){
+    background-color: red;
+}
+.icon ul li:nth-child(6){
+    background-color: red;
+}
+.icon ul li:last-child{
+    background-color: yellow;
+}
+.icon ul li a{
+    font-size: 20px;
+    color:#fff;
+}
+/*icon part css end*/
+/*form_main css part start */
+.form_main{
+    height: 600px;
+    width: 500px;
+    background-image: linear-gradient(to right bottom,blue,rgba(50, 232, 129,1.0),rgba(200, 0, 0, 0.72));
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all linear .3s;
+        
+}
+.form_main:hover{
+    box-shadow: 0px 0px 10px black;
+    transition: all linear .3s;
+}
+.form_main form input{
+    height: 30px;
+    width: 250px;
+    padding-left: 5px;
+    outline: 0;
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    margin-top: 5px;
+}
+.form_main form label{
+    color: #fff;
+}
+.form_main form label span{
+    color: red;
+    font-size: 20px;
+}
+
+.form_main form input::placeholder{
+    color: #e8e0e0;
+}
+.form_main form button{
+    margin-left: 90px;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-image: linear-gradient(to right,blue,teal,red);
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 20px;    
+}
+
+.img_round{
+    overflow: hidden;
+}
+.img_round img{
+    height: 400px;
+    width: 400px;
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 50%;
+    margin-left: 450px; 
+    margin-top: 200px;
+    transition: all linear 1s;
+    transform: scale(.2);
+    overflow: hidden;
+}
+.img_round img:hover{
+     border-bottom-right-radius: 0%;
+     border-top-left-radius: 0%;
+     border-top-right-radius: 50%;
+     border-bottom-left-radius: 50%;
+     transition: all linear 1s;
+     transform: scale(1.4);
+}
+/*from part css end*/
+/*layout part css statr*/
+.Header{
+    width: 100%;
+    height: 80px;
+    background-color:gray;
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 80px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+  
+}
+.Navigation{
+    width: 100%;
+    height: 50px;
+    background-color: gray;
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+.Content1{
+    width: 20%;
+    height: 400px;
+    background-color: gray;
+    float: left;
+    text-align: center;
+    line-height: 400px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    
+}
+.Main{
+
+    width: 58%;
+    height: 400px;
+    background-color: gray;
+    float: left;
+    margin-left: 15px;
+    text-align: center;
+    line-height: 400px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+.Content{
+    width: 20%;
+    height: 400px;
+    background-color:gray;
+    float: left;
+    margin-left: 16px;
+    text-align: center;
+    line-height: 400px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+.Footer{
+    width: 100%;
+    height: 80px;
+    background-color:gray;
+    float: left;
+    margin-top: 10px;
+    text-align: center;
+    line-height: 80px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+   
+   
+}
+
+/*layout part css end*/
+/*flag part css start*/
+.green{
+    width: 700px;
+    height: 400px;
+    background-color: green;
+    margin: 100px auto;
+    display:flex; 
+    justify-content: center;
+    align-items: center;
+}
+.red{
+    width: 250px;
+    height: 250px;
+    background-color: red;
+    border-radius: 50%;
+    display:flex; 
+    justify-content: center;
+    align-items: center;
+}
+.red img{
+    width: 200px;
+    height: 200px;
+}
+.red:hover img{
+    transform: rotate(360deg);
+    transition: all linear 3s;
+}
+/*flag part css end*/
+    /*position part CSS start*/
+.main_box{
+    height: 400px;
+    width: 600px;
+    background-color: blueviolet;
+    position: relative;
+}
+.box{
+    height: 300px;
+    width: 500px;
+    background-color: green;
+    position:absolute;
+    bottom: 50px;
+    right: 50px;
+ 
+}
+.box1{
+    height: 200px;
+    width: 400px;
+    background-color: darkgray;
+    position: absolute;
+    right: 50px; 
+    bottom: 50px;
+}
+.box2{
+    height: 150px;
+    width: 350px;
+    background-color: red;
+    position: absolute; 
+    left: 25px;
+    bottom: 25px;
+}
+.box3{
+   height: 80px;
+    width: 200px;
+    background-color: pink;
+    position: absolute; 
+    left: 70px;
+    bottom: 30px; 
+}
+.box3 img{
+    width: 150px;
+    height: 70px;
+    position: absolute;
+    left: 35px;
+    top: 0px;
+}
+.box3:hover img{
+    transform: rotate(360deg);
+    transition: all linear 2s;
+}
+/*position part CSS end*/
+/*botstrap css start*/
+.container{
+    text-align: justify;
+}
+/*botstrap css end*/
+
+
+/*footer part css start */
+footer{
+    background-color:teal;
+    color: #fff;
+    padding: 10px 0;
+    text-align:center;
+}
+/*footer part css end*/
+
